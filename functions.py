@@ -14,10 +14,23 @@
 #     print(i, j)
 
 
-i=[1,3,2,4]
-j = ["asdf","asd","asd","asd"]
+i = [1, 3, 2, 4]
+j = ["asdf", "asd", "asd", "asd"]
 for a in i:
     for b in j:
-            
+
         print(a)
         print(b)
+
+# python function
+
+
+def fectorial(n):
+    if n < 1:
+        return 1
+    else:
+        return (n * fectorial(n-1))
+
+
+num = int(input("enter the number "))
+print("the fectorial of", num, "is", fectorial(num))
